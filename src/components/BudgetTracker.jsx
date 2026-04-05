@@ -27,7 +27,7 @@ export default function BudgetTracker() {
         </PieChart>
         <div>
           <div className="text-2xl font-bold text-blue-600">$1200</div>
-          <div className="text-xs text-gray-500">of $2000 used</div>
+          <div className="text-xs text-gray-500 dark:text-gray-300">of $2000 used</div>
         </div>
       </div>
     </div>

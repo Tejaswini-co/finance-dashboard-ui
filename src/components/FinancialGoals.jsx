@@ -17,7 +17,7 @@ export default function FinancialGoals() {
             <li key={i}>
               <div className="flex justify-between mb-1">
                 <span className="text-sm font-medium">{g.name}</span>
-                <span className="text-xs text-gray-500">{percent}%</span>
+                <span className="text-xs text-gray-500 dark:text-gray-300">{percent}%</span>
               </div>
               <div className="w-full bg-gray-200 rounded h-2">
                 <div
@@ -25,7 +25,7 @@ export default function FinancialGoals() {
                   style={{ width: percent + "%" }}
                 ></div>
               </div>
-              <div className="text-xs text-gray-400 mt-1">
+              <div className="text-xs text-gray-400 dark:text-gray-300 mt-1">
                 ${g.current} / ${g.target}
               </div>
             </li>

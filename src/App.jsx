@@ -73,13 +73,13 @@ export default function App() {
 						<h2 className="text-2xl font-bold mb-4">Budget Tracker</h2>
 						<div className="mb-6">
 							<div className="flex justify-between mb-2">
-								<span className="text-gray-700">Total Budget</span>
+								<span className="text-gray-700 dark:text-gray-200">Total Budget</span>
 								<span className="font-semibold">$2,000</span>
 							</div>
 							<div className="w-full bg-gray-200 rounded h-3 mb-2">
 								<div className="bg-blue-500 h-3 rounded w-3/5"></div>
 							</div>
-							<div className="flex justify-between text-sm text-gray-500">
+							<div className="flex justify-between text-sm text-gray-500 dark:text-gray-300">
 								<span>Used: $1,200</span>
 								<span>Remaining: $800</span>
 							</div>
@@ -89,7 +89,7 @@ export default function App() {
 							<div className="w-full bg-gray-200 rounded h-3 mb-2">
 								<div className="bg-green-500 h-3 rounded w-1/2"></div>
 							</div>
-							<div className="flex justify-between text-sm text-gray-500">
+							<div className="flex justify-between text-sm text-gray-500 dark:text-gray-300">
 								<span>Saved: $1,000</span>
 								<span>Target: $2,000</span>
 							</div>

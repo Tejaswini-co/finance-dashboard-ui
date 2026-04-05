@@ -14,7 +14,7 @@ export default function ActivityFeed() {
       <ul className="space-y-4">
         {activities.map((a, i) => (
           <li key={i} className="flex items-start gap-3">
-            <span className="text-xs text-gray-400 w-20 shrink-0">{a.time}</span>
+            <span className="text-xs text-gray-400 dark:text-gray-300 w-20 shrink-0">{a.time}</span>
             <span className="text-sm text-gray-700 dark:text-gray-200">{a.text}</span>
           </li>
         ))}
