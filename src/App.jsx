@@ -69,7 +69,7 @@ export default function App() {
 					</div>
 				)}
 				{page === "Budget" && (
-					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300 text-gray-900 dark:text-gray-100">
 						<h2 className="text-2xl font-bold mb-4">Budget Tracker</h2>
 						<div className="mb-6">
 							<div className="flex justify-between mb-2">
@@ -97,18 +97,18 @@ export default function App() {
 					</div>
 				)}
 				{page === "Settings" && (
-					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow max-w-lg transition-colors duration-300">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow max-w-lg transition-colors duration-300 text-gray-900 dark:text-gray-100">
 						<h2 className="text-2xl font-bold mb-4">Settings</h2>
 						<div className="mb-6">
 							<label className="block mb-2 font-semibold">Theme</label>
-							<select className="w-full border rounded px-3 py-2">
+							<select className="w-full border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 								<option>Light</option>
 								<option>Dark</option>
 							</select>
 						</div>
 						<div className="mb-6">
 							<label className="block mb-2 font-semibold">Notification Email</label>
-							<input type="email" className="w-full border rounded px-3 py-2" placeholder="you@email.com" />
+							<input type="email" className="w-full border rounded px-3 py-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-400" placeholder="you@email.com" />
 						</div>
 						<button className="bg-blue-500 text-white px-4 py-2 rounded">Save Settings</button>
 					</div>
