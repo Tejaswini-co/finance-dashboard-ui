@@ -34,11 +34,11 @@ export default function App() {
 					</>
 				)}
 				{page === "Analytics" && (
-					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300 text-gray-900 dark:text-gray-100">
 						<h2 className="text-2xl font-bold mb-4">Analytics Overview</h2>
 						<div className="mb-6">
 							<div className="text-lg font-semibold mb-2">Top Spending Categories</div>
-							<ul className="list-disc pl-6 text-gray-700">
+							<ul className="list-disc pl-6 text-gray-700 dark:text-gray-200">
 								<li>Rent: $1,200</li>
 								<li>Food: $400</li>
 								<li>Shopping: $300</li>
@@ -48,18 +48,18 @@ export default function App() {
 							<div className="text-lg font-semibold mb-2">Monthly Comparison</div>
 							<div className="flex gap-8">
 								<div>
-									<div className="text-xs text-gray-500">March</div>
+									<div className="text-xs text-gray-500 dark:text-gray-300">March</div>
 									<div className="text-xl font-bold">$2,500</div>
 								</div>
 								<div>
-									<div className="text-xs text-gray-500">April</div>
+									<div className="text-xs text-gray-500 dark:text-gray-300">April</div>
 									<div className="text-xl font-bold">$2,800</div>
 								</div>
 							</div>
 						</div>
 						<div>
 							<div className="text-lg font-semibold mb-2">Observation</div>
-							<div className="text-gray-700">Your spending increased by 12% compared to last month.</div>
+							<div className="text-gray-700 dark:text-gray-200">Your spending increased by 12% compared to last month.</div>
 						</div>
 					</div>
 				)}
