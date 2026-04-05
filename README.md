@@ -191,29 +191,6 @@ The application layout is implemented using **CSS Grid and Flexbox**, ensuring t
 
 ---
 
-# 📂 Project Structure
-
-finance-dashboard-ui
-
-src
-├── components
-│   ├── Sidebar.jsx
-│   ├── Header.jsx
-│   ├── SummaryCards.jsx
-│   ├── BalanceChart.jsx
-│   ├── SpendingChart.jsx
-│   ├── TransactionsTable.jsx
-│   └── InsightsPanel.jsx
-
-├── data
-│   └── mockData.js
-
-├── App.jsx
-├── main.jsx
-└── index.css
-
----
-
 # ⚙️ Installation
 
 ### Clone the repository
