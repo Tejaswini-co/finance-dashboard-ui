@@ -42,7 +42,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the dashboard.
 
 ### 4. Build for production
 
@@ -52,22 +51,6 @@ npm run build
 
 The optimized build will be in the `dist` folder.
 
-## Deployment (Vercel)
-
-1. **Push your code to GitHub** (already done).
-2. **Go to [vercel.com](https://vercel.com/)** and sign in with your GitHub account.
-3. **Click "New Project"** and import your `finance-dashboard-ui` repository.
-4. **Configure the project:**
-   - Framework: `Vite`
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - (Other settings can be left as default)
-5. **Click "Deploy"**.
-6. After deployment, Vercel will provide a live URL for your dashboard.
-
-## Folder Structure
-
-```
 finance-dashboard-ui/
 ├── src/
 │   ├── components/
