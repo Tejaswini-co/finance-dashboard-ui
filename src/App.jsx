@@ -14,7 +14,7 @@ import { useState } from "react";
 export default function App() {
 	const [page, setPage] = useState("Dashboard");
 	return (
-		<div className="flex min-h-screen bg-gray-100">
+		<div className="flex min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
 			<Sidebar page={page} setPage={setPage} />
 			<div className="flex-1 p-6">
 				<Header />
@@ -34,7 +34,7 @@ export default function App() {
 					</>
 				)}
 				{page === "Analytics" && (
-					<div className="bg-white p-8 rounded-xl shadow">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300">
 						<h2 className="text-2xl font-bold mb-4">Analytics Overview</h2>
 						<div className="mb-6">
 							<div className="text-lg font-semibold mb-2">Top Spending Categories</div>
@@ -64,12 +64,12 @@ export default function App() {
 					</div>
 				)}
 				{page === "Transactions" && (
-					<div className="bg-white p-8 rounded-xl shadow">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300">
 						<TransactionsTable />
 					</div>
 				)}
 				{page === "Budget" && (
-					<div className="bg-white p-8 rounded-xl shadow">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow transition-colors duration-300">
 						<h2 className="text-2xl font-bold mb-4">Budget Tracker</h2>
 						<div className="mb-6">
 							<div className="flex justify-between mb-2">
@@ -97,7 +97,7 @@ export default function App() {
 					</div>
 				)}
 				{page === "Settings" && (
-					<div className="bg-white p-8 rounded-xl shadow max-w-lg">
+					<div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow max-w-lg transition-colors duration-300">
 						<h2 className="text-2xl font-bold mb-4">Settings</h2>
 						<div className="mb-6">
 							<label className="block mb-2 font-semibold">Theme</label>
