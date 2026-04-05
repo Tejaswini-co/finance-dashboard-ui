@@ -25,12 +25,12 @@ export default function TransactionsTable() {
 						placeholder="Search transactions..."
 						value={search}
 						onChange={e => setSearch(e.target.value)}
-						className="border rounded px-2 py-1 w-full md:w-48 focus:outline-none focus:ring"
+						className="border rounded px-2 py-1 w-full md:w-48 focus:outline-none focus:ring bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-400"
 					/>
 					<select
 						value={category}
 						onChange={e => setCategory(e.target.value)}
-						className="border rounded px-2 py-1 w-full md:w-40 focus:outline-none focus:ring"
+						className="border rounded px-2 py-1 w-full md:w-40 focus:outline-none focus:ring bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
 					>
 						<option value="">All Categories</option>
 						{categories.map((cat, i) => (
@@ -45,33 +45,33 @@ export default function TransactionsTable() {
 					Export CSV
 				</button>
 			</div>
-			<div className="overflow-x-auto rounded-xl">
-				<table className="w-full text-left rounded-xl overflow-hidden">
-					<thead>
-						<tr className="border-b bg-gray-50 dark:bg-gray-700">
-							<th className="py-2 px-3">Date</th>
-							<th className="py-2 px-3">Category</th>
-							<th className="py-2 px-3">Description</th>
-							<th className="py-2 px-3">Amount</th>
-							<th className="py-2 px-3">Status</th>
-						</tr>
-					</thead>
-					<tbody>
-						{filtered.map((t, i) => (
-							<tr
-								key={i}
-								className={`border-b transition hover:bg-gray-50 dark:hover:bg-gray-700 ${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-900'}`}
-							>
-								<td className="py-2 px-3">{t.date}</td>
-								<td className="py-2 px-3">{t.category}</td>
-								<td className="py-2 px-3">{t.description}</td>
-								<td className={`py-2 px-3 font-semibold ${t.amount < 0 ? 'text-red-500' : 'text-green-500'}`}>{t.amount}</td>
-								<td className="py-2 px-3">{t.status}</td>
+				<div className="overflow-x-auto rounded-xl">
+					<table className="w-full text-left rounded-xl overflow-hidden text-gray-900 dark:text-gray-100">
+						<thead>
+							<tr className="border-b bg-gray-50 dark:bg-gray-700">
+								<th className="py-2 px-3">Date</th>
+								<th className="py-2 px-3">Category</th>
+								<th className="py-2 px-3">Description</th>
+								<th className="py-2 px-3">Amount</th>
+								<th className="py-2 px-3">Status</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
+						</thead>
+						<tbody>
+							{filtered.map((t, i) => (
+								<tr
+									key={i}
+									className={`border-b transition hover:bg-gray-50 dark:hover:bg-gray-700 ${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-900'}`}
+								>
+									<td className="py-2 px-3">{t.date}</td>
+									<td className="py-2 px-3">{t.category}</td>
+									<td className="py-2 px-3">{t.description}</td>
+									<td className={`py-2 px-3 font-semibold ${t.amount < 0 ? 'text-red-500' : 'text-green-500'}`}>{t.amount}</td>
+									<td className="py-2 px-3">{t.status}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
 		</div>
 	);
 }
